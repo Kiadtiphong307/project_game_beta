@@ -35,6 +35,12 @@ const player1_choose = ref('');
 const player2_choose = ref('');
 const result = ref('');
 
+const choiceImages = {
+  'ค้อน': '/img/3.jfif',
+  'กระดาษ': '/img/1.jfif',
+  'กรรไกร': '/img/2.jfif',
+};
+
 
 
 function getRandomChoice() {
