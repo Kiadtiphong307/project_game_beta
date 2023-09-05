@@ -37,9 +37,9 @@ const result = ref('');
 
 
 const choiceImages = {
-  'ค้อน': 'img/3.jfif',
-  'กระดาษ': 'img/1.jfif',
-  'กรรไกร': 'img/2.jfif',
+  'ค้อน': '/img/3.jfif',
+  'กระดาษ': '/img/1.jfif',
+  'กรรไกร': '/img/2.jfif',
 };
 
 
