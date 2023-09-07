@@ -15,18 +15,28 @@ const control_game = {
 	'ค้อน': {
 		'ค้อน': 'เสมอ',
 		'กระดาษ': 'แพ้',
-		'กรรไกร': 'ชนะ'
+		'กรรไกร': 'ชนะ',
+    'ความรัก': 'แพ้'
 	},
 	'กระดาษ': {
 		'ค้อน': 'ชนะ',
 		'กระดาษ': 'เสมอ',
-		'กรรไกร': 'แพ้'
+		'กรรไกร': 'แพ้',
+    'ความรัก': 'แพ้'
 	},
 	'กรรไกร': {
 		'ค้อน': 'แพ้',
 		'กระดาษ': 'ชนะ',
-		'กรรไกร': 'เสมอ'
+		'กรรไกร': 'เสมอ',
+    'ความรัก': 'แพ้'
+	},
+  'ความรัก': {
+		'ค้อน': 'ชนะ',
+		'กระดาษ': 'ชนะ',
+		'กรรไกร': 'ชนะ',
+    'ความรัก': 'เสมอ'
 	}
+
 }
 
 
@@ -36,15 +46,16 @@ const player2_choose = ref('');
 const result = ref('');
 
 const choiceImages = {
-  'ค้อน': '/img/3.jfif',
-  'กระดาษ': '/img/1.jfif',
-  'กรรไกร': '/img/2.jfif',
+  'ค้อน': 'https://callplay.in.th/manual_info/2019/07/vj_gift_random_v1/th/images/01.png',
+  'กระดาษ': 'https://callplay.in.th/manual_info/2019/07/vj_gift_random_v1/th/images/03.png',
+  'กรรไกร': 'https://callplay.in.th/manual_info/2019/07/vj_gift_random_v1/th/images/02.png',
+  'ความรัก': 'https://png.pngtree.com/png-vector/20220428/ourmid/pngtree-smooth-glossy-heart-vector-file-ai-and-png-png-image_4557871.png',
 };
 
 
 
 function getRandomChoice() {
-  const choices = ['ค้อน', 'กระดาษ', 'กรรไกร'];
+  const choices = ['ค้อน', 'กระดาษ', 'กรรไกร','ความรัก'];
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
